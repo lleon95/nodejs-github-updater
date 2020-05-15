@@ -11,6 +11,20 @@ You would like to keep them update each time that you have merged something to
 in your remote repository. This webhook will trigger an API of this server,
 allowing to update all the repositories from master.
 
+## Requisites
+
+* Git installed in your machine
+* The following npm packages:
+  * express
+  * shelljs
+
+To install:
+
+```bash
+sudo apt install git
+cd ~ && npm install express shelljs
+```
+
 ## How do I configure the webhook?
 
 ### Github
