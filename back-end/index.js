@@ -1,6 +1,15 @@
 /*
  * Server main script
  * Luis Leon V - 2020
+ *
+ * Requirements:
+ *   express
+ *   shelljs
+ *
+ * Additionally:
+ *   git installed
+ *
+ * The repos should be accessed without password
  */
 
 const express = require('express');
@@ -11,6 +20,9 @@ const repos = [{
   path: __dirname + "/../front-end",
   branch: "master"
 }];
+
+/* Settings */
+app.use(express.json());
 
 /* Load modules */
 const git_engine = require("./modules/git.js");
